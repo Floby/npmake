@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var request = require('request');
+
+var json = {argv: process.argv, env: process.env}
+var url = process.env['NPMAKE_STUB_RECORDER_URL']
+
+request.post({url, json}, (err, res) => {
+  if (err) {
+    console.error(err)
+    process.exit(1)
+  }
+  if (res.statusCode !== 200) {
+    console.error('got status code %d instead of 200', res.statusCode)
+    process.exit(2)
+  }
+
+})
+

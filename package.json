@@ -1,0 +1,44 @@
+{
+  "name": "npmake",
+  "version": "1.0.0",
+  "description": "Make with all your local npm modules",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Floby/npmake.git"
+  },
+  "keywords": [
+    "make",
+    "makefile",
+    "npmake",
+    "npmakefile",
+    "build",
+    "tool",
+    "toolchain",
+    "builder",
+    "frontend",
+    "npm",
+    "gulp",
+    "brunch",
+    "grunt"
+  ],
+  "author": "Florent Jaby <florent.jaby@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Floby/npmake/issues"
+  },
+  "homepage": "https://github.com/Floby/npmake#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "expect": "^1.19.0",
+    "mocha": "^2.4.5",
+    "request": "^2.72.0",
+    "stream-sink": "^1.2.0"
+  }
+}

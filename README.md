@@ -46,8 +46,9 @@ Dependencies
 ------------
 
 You need make installed on your system.
-
 In the future, `npmake` may be able to automatically install it.
+
+You also need npm available on your system, obviously
 
 Test
 ----

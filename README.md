@@ -1,4 +1,4 @@
-[![Build Status][travis-image]][travis-url] [![Coverage][coveralls-image]][coveralls-url]
+[![Build Status][travis-image]][travis-url]
 
 Konga
 ==================
@@ -76,8 +76,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [travis-image]: http://img.shields.io/travis/Floby/npmake/master.svg?style=flat
 [travis-url]: https://travis-ci.org/Floby/npmake
-[coveralls-image]: http://img.shields.io/coveralls/Floby/npmake/master.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/Floby/npmake
 [mocha-url]: https://github.com/visionmedia/mocha
 [kong-url]: http://getkong.org
 

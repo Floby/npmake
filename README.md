@@ -1,6 +1,6 @@
 [![Build Status][travis-image]][travis-url]
 
-Konga
+npmake
 ==================
 
 > Make with all your local npm modules

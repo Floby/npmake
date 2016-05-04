@@ -1,8 +1,3 @@
 #!/bin/bash
 set -e
-#echo args $*
-#echo pwd $PWD
-#echo HELLO=$HELLO
-#echo PATH=$PATH
-#which npm
-npm run env -- make
+npm run env -- make $*

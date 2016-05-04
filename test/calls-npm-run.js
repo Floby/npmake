@@ -38,6 +38,20 @@ describe('npmake', () => {
     })
   })
 
+  describe('called with some arguments', () => {
+    it('calls `npm run env -- make arguments`', (done) => {
+      exec(NPMAKE_PATH, ['-B', 'target'], {env}, (err, stdout, stderr) => {
+        if (err) return done(err)
+        let calls = recorder.calls()
+        expect(calls).to.have.length(1)
+        let call = calls.pop()
+        expect(call).to.exist
+        expect(call.argv).to.deep.equal([NODE_PATH, FAKE_NPM_BIN_PATH, 'run', 'env', '--', 'make', '-B', 'target'])
+        done()
+      })
+    })
+  })
+
   util.inherits(StubRecorder, Server);
   function StubRecorder () {
     let calls = []
